@@ -13,7 +13,7 @@ identifying a hidden point group. Prism, an AI tutor at the museum's information
 
 [![tests](https://github.com/vzordillo/crystalminer/actions/workflows/tests.yml/badge.svg)](https://github.com/vzordillo/crystalminer/actions/workflows/tests.yml)
 [![Code licence: LGPL-2.1-or-later](https://img.shields.io/badge/code-LGPL--2.1--or--later-blue.svg)](LICENSE)
-[![Media licence: CC BY-SA 4.0](https://img.shields.io/badge/media-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.media)
+[![Media licence: CC BY-SA 4.0](<https://img.shields.io/badge/media-CC%20BY--SA%204.0-lightgrey.svg>)](LICENSE.media)
 
 <table>
   <tr>
@@ -45,7 +45,7 @@ Symmetry is the language of crystallography, but it is hard to picture. Chemistr
 that students cope with the symmetry of single molecules but find space groups hard to imagine,
 especially the symmetries that include a translation, such as screw axes and glide planes. They
 also point to evidence that tangible 3D objects teach better than the 2D diagrams of textbooks
-([Graw & Stalke, 2022](https://doi.org/10.1107/S1600576721012218)). crystalminer is built around
+([Graw &amp; Stalke, 2022](https://doi.org/10.1107/S1600576721012218)). crystalminer is built around
 those two observations:
 
 - **Build it, don't just look at it.** Students do not read about a mirror or a screw axis; they
@@ -98,14 +98,14 @@ first start of a new world builds the museum and all 23 worlds, which takes abou
 
 ### Controls
 
-| Key | Action |
-|---|---|
-| **K** | Fly |
-| **J** | Go fast |
-| **T** or **/** | Open chat to type a command |
-| **I** | Progress board: what is left at your tier, with a button to go to each place |
-| Right-click at nothing | While flying, place a block 3 nodes in front of you (for the floating cubes) |
-| Left-click (punch) | Use a portal, a lever, a clue crystal |
+| Key                        | Action                                                                       |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| **K**                | Fly                                                                          |
+| **J**                | Go fast                                                                      |
+| **T** or **/** | Open chat to type a command                                                  |
+| **I**                | Progress board: what is left at your tier, with a button to go to each place |
+| Right-click at nothing     | While flying, place a block 3 nodes in front of you (for the floating cubes) |
+| Left-click (punch)         | Use a portal, a lever, a clue crystal                                        |
 
 All blocks in your inventory are free and never run out.
 
@@ -203,13 +203,13 @@ outside the build space.
 
 ### Tiers
 
-| Tier | Worlds | Idea |
-|---|---|---|
-| 0 | Symmetry Gate, Try-it Pad | The four basic operations: translation, rotation, reflection, inversion; predicting handedness |
-| 1 | Mirror Plaza (m), Twofold Yard (2), Fourfold Tower (4), Inversion Core (-1), Translation Hall (P1) | One operation at a time |
-| 2 | Twin Mirrors (mm2), Monoclinic Cube (2/m), Square Court (4mm), Orthorhombic Cube (mmm) | Combining operations creates new ones |
-| 3 | Diagonal Cube (3), Rotoinversion Room (-4), Bar-Three Room (-3), Kaleidoscope (m-3m), Impossible Room | 3D, cubic symmetry, the crystallographic restriction |
-| 4 | Screw Hall (P2₁), Spiral Tower (P4₁), Glide Hall (Pa), Mystery Lab, Free Lab; Pattern Garden: Mirror Tiles (pmm), Glide Tiles (pgg), Pinwheel Tiles (p4), Weave Tiles (p4g) | Space-group operations, plane groups, identifying symmetry |
+| Tier | Worlds                                                                                                                                                                        | Idea                                                                                           |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 0    | Symmetry Gate, Try-it Pad                                                                                                                                                     | The four basic operations: translation, rotation, reflection, inversion; predicting handedness |
+| 1    | Mirror Plaza (m), Twofold Yard (2), Fourfold Tower (4), Inversion Core (-1), Translation Hall (P1)                                                                            | One operation at a time                                                                        |
+| 2    | Twin Mirrors (mm2), Monoclinic Cube (2/m), Square Court (4mm), Orthorhombic Cube (mmm)                                                                                        | Combining operations creates new ones                                                          |
+| 3    | Diagonal Cube (3), Rotoinversion Room (-4), Bar-Three Room (-3), Kaleidoscope (m-3m), Impossible Room                                                                         | 3D, cubic symmetry, the crystallographic restriction                                           |
+| 4    | Screw Hall (P2₁), Spiral Tower (P4₁), Glide Hall (Pa), Mystery Lab, Free Lab; Pattern Garden: Mirror Tiles (pmm), Glide Tiles (pgg), Pinwheel Tiles (p4), Weave Tiles (p4g) | Space-group operations, plane groups, identifying symmetry                                     |
 
 Answering every quiz question of a tier unlocks the next. Worlds above a player's tier can be
 visited but not built in. Progress is saved with the world. Entering a world shows its explanation
@@ -278,36 +278,36 @@ Stalke, *J. Appl. Cryst.* 55, 144–148, 2022), get the most help.
 
 **Everyone**
 
-| Command | What it does |
-|---|---|
-| `/guide` | List what you can do |
-| `/explain` | Show the guide for this place again |
-| `/quiz` | Answer questions to unlock the next tier (where you have none left, a review question that does not change your tier) |
-| `/progress` | Show your tier |
-| `/regions`, `/goto <region>`, `/spawn` | List the worlds, travel to one, go back to the foyer |
-| `/elements <all\|axes\|mirrors\|centres\|cells\|none>` | Choose which symmetry markers to show |
-| `/stereogram on\|off` | Show or hide the stereogram |
-| `/hint [on\|off]` | Show or hide the "Next:" line |
-| `/predict [on\|off]` | Predict again in this world, or turn predictions on or off |
-| `/step [on\|off]` | Copies appear one at a time, each named |
-| `/byhand [hint\|off]` | Place the copies yourself and have each one checked |
-| `/hunt` | Show which clue crystals you have solved |
-| `/tour [next\|back\|end]` | The ten-minute guided tour |
-| `/pretest`, `/posttest` | The short test before and after playing |
-| `/whatsymmetry` | Work out the exact symmetry of your build |
-| `/symmetry <description or symbol>` | Give the Free Lab a symmetry, e.g. `/symmetry 4mm` |
-| `/challenge`, `/clearlab` | A build challenge for the Free Lab; empty the Free Lab |
-| `/ask [question]` | Chat with Prism, the AI tutor (see [The AI tutor](#the-ai-tutor)) |
+| Command                                             | What it does                                                                                                          |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `/guide`                                          | List what you can do                                                                                                  |
+| `/explain`                                        | Show the guide for this place again                                                                                   |
+| `/quiz`                                           | Answer questions to unlock the next tier (where you have none left, a review question that does not change your tier) |
+| `/progress`                                       | Show your tier                                                                                                        |
+| `/regions`, `/goto <region>`, `/spawn`        | List the worlds, travel to one, go back to the foyer                                                                  |
+| `/elements <all\|axes\|mirrors\|centres\|cells\|none>` | Choose which symmetry markers to show                                                                                 |
+| `/stereogram on\|off`                              | Show or hide the stereogram                                                                                           |
+| `/hint [on\|off]`                                  | Show or hide the "Next:" line                                                                                         |
+| `/predict [on\|off]`                               | Predict again in this world, or turn predictions on or off                                                            |
+| `/step [on\|off]`                                  | Copies appear one at a time, each named                                                                               |
+| `/byhand [hint\|off]`                              | Place the copies yourself and have each one checked                                                                   |
+| `/hunt`                                           | Show which clue crystals you have solved                                                                              |
+| `/tour [next\|back\|end]`                           | The ten-minute guided tour                                                                                            |
+| `/pretest`, `/posttest`                         | The short test before and after playing                                                                               |
+| `/whatsymmetry`                                   | Work out the exact symmetry of your build                                                                             |
+| `/symmetry <description or symbol>`               | Give the Free Lab a symmetry, e.g. `/symmetry 4mm`                                                                  |
+| `/challenge`, `/clearlab`                       | A build challenge for the Free Lab; empty the Free Lab                                                                |
+| `/ask [question]`                                 | Chat with Prism, the AI tutor (see [The AI tutor](#the-ai-tutor))                                                      |
 
 **Teachers** (the `teacher` privilege; automatic in single player; grant it with
 `/grant <name> teacher`)
 
-| Command | What it does |
-|---|---|
-| `/class` | Every student's tier, scores and predictions |
-| `/settier <tier> [player]` | Set a player's tier |
-| `/exportdata` | Save answers, predictions and discoveries, without names, as CSV files in the world folder |
-| `/showcase [region \| clear]` | Fill the worlds with example builds, or empty them again |
+| Command                        | What it does                                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------ |
+| `/class`                     | Every student's tier, scores and predictions                                               |
+| `/settier <tier> [player]`   | Set a player's tier                                                                        |
+| `/exportdata`                | Save answers, predictions and discoveries, without names, as CSV files in the world folder |
+| `/showcase [region \| clear]` | Fill the worlds with example builds, or empty them again                                   |
 
 **For a demonstration**, `/showcase` fills 20 worlds with example builds: a butterfly in Mirror
 Plaza, a windmill in the Fourfold Tower, a 48-fold star in the Kaleidoscope, a spiral staircase in
@@ -338,8 +338,7 @@ above or the information-desk character, press **Ask Prism** on the progress boa
 `/ask` anywhere to open the chat window; `/ask <question>` asks straight away. Prism remembers the
 conversation until **New chat**, suggests questions for the player's tier, and answers only from
 the reviewed lesson text in `content.lua`, without giving away quiz answers. The billboard shows the
-latest question (never who asked) and Prism's answer to everyone in the room. `/symmetry
-<description>` uses the same model to pick a point group, which the symmetry engine then checks.
+latest question (never who asked) and Prism's answer to everyone in the room. `/symmetry <description>` uses the same model to pick a point group, which the symmetry engine then checks.
 
 **Setup** (Luanti **Settings**, show advanced settings):
 
@@ -395,23 +394,23 @@ tests/run_all.sh [path-to-luanti-binary]
 This runs the unit tests (it skips them if no Lua is installed), then starts a real server with
 `crystalminer.selftest = true`. The unit tests are:
 
-| File | Checks |
-|---|---|
-| `test_symmetry.lua` | The engine: operations, groups, the point and plane groups |
-| `test_science.lua` | The science statements listed above |
-| `test_content.lua` | Every region's symmetry, quiz answers and group orders; regions do not overlap |
-| `test_elements.lua` | Where symmetry markers are drawn |
-| `test_decor.lua` | Architecture stays out of the build spaces; worlds do not touch |
-| `test_showcase.lua` | The `/showcase` builds have their world's symmetry |
-| `test_assess.lua` | Pre- and post-test items, normalized gain, anonymous export |
-| `test_museum.lua` | The crystal models, clue answers and stereograms |
-| `test_signs.lua` | The text of every sign fits it and has glyphs |
-| `test_guides.lua` | Every guide's numbers match the engine |
-| `test_next_hint.lua` | The "Next:" line |
-| `test_billboard.lua` | The billboard's lines, typing, overflow and texture size; every glyph exists |
-| `test_lessons.lua` | Review questions for `/quiz`: none above the player's tier, cycling |
-| `test_web.mjs` | The web version against the Lua engine: every world's copies, detection, lessons, data up to date, the museum, the live exhibits' pipeline, lettering, loader and loading notice, Gallery 2's holograms |
-| `test_tutor.lua` | Tutor request building and response handling, the DeepSeek preset, chat history |
+| File                   | Checks                                                                                                                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `test_symmetry.lua`  | The engine: operations, groups, the point and plane groups                                                                                                                                              |
+| `test_science.lua`   | The science statements listed above                                                                                                                                                                     |
+| `test_content.lua`   | Every region's symmetry, quiz answers and group orders; regions do not overlap                                                                                                                          |
+| `test_elements.lua`  | Where symmetry markers are drawn                                                                                                                                                                        |
+| `test_decor.lua`     | Architecture stays out of the build spaces; worlds do not touch                                                                                                                                         |
+| `test_showcase.lua`  | The `/showcase` builds have their world's symmetry                                                                                                                                                    |
+| `test_assess.lua`    | Pre- and post-test items, normalized gain, anonymous export                                                                                                                                             |
+| `test_museum.lua`    | The crystal models, clue answers and stereograms                                                                                                                                                        |
+| `test_signs.lua`     | The text of every sign fits it and has glyphs                                                                                                                                                           |
+| `test_guides.lua`    | Every guide's numbers match the engine                                                                                                                                                                  |
+| `test_next_hint.lua` | The "Next:" line                                                                                                                                                                                        |
+| `test_billboard.lua` | The billboard's lines, typing, overflow and texture size; every glyph exists                                                                                                                            |
+| `test_lessons.lua`   | Review questions for `/quiz`: none above the player's tier, cycling                                                                                                                                   |
+| `test_web.mjs`       | The web version against the Lua engine: every world's copies, detection, lessons, data up to date, the museum, the live exhibits' pipeline, lettering, loader and loading notice, Gallery 2's holograms |
+| `test_tutor.lua`     | Tutor request building and response handling, the DeepSeek preset, chat history                                                                                                                         |
 
 The self-test (`mods/crystalminer/selftest.lua`) places and digs blocks through the registered
 callbacks and runs about 130 checks: locking, quizzes, saving, the Gate, the Try-it Pad, the floor
@@ -487,7 +486,7 @@ them under **Settings → Content: Games → crystalminer**: the tutor settings,
 - The [Materials Project](https://materialsproject.org) and its MPContribs platform for the crystal
   structures in the live exhibits (CC BY 4.0; see [LICENSE.media](LICENSE.media)), and the Jmol
   element colours (values from ASE's `jmol_colors`).
-- Contributors: Lenard Tamayo [@lvtamayo](https://github.com/lvtamayo) for the live
+- Contributors: Lenard Paulo Tamayo [@lvtamayo](https://github.com/lvtamayo) for the live
   crystal exhibits, Davis Magpantay ([@Dexva](https://github.com/Dexva)) for the museum NPCs,
   [@aritraroy24](https://github.com/aritraroy24) for Prism, the AI tutor's chat window and pixel
   billboard, and the provider/model tutor setting, and Rev Odevilas
